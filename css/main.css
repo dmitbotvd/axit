@@ -4,8 +4,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 26px;
     font-family: 'Open Sans', sans-serif;
+    background: red;
 }
 img {
     display: block;
@@ -13,36 +14,11 @@ img {
 }
 .container {
     width: 100%;
-    max-width: 1120px;
-    margin: 0 auto;
-}
-.section--social {
-    border-bottom: 1px solid #ccc;
-}
-.section--grey {
-    background-color: #f5f5f5;
-}
-.section--city {
-    background: url("../img/city.png") no-repeat center;
-    background-size: cover;
-    padding: 70px 0;
-}
-/*header*/
-.header {
-    padding: 23px 0;
-    background: #000;
-}
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.logo {
-    
+    max-width:asdasdasdasd
+
 }
 nav {
-    
+
 }
 .nav__list {
     margin-right: 48px;
@@ -495,7 +471,7 @@ footer {
         margin: 0 auto;
     }
     .social__networks i{
-        margin: 5px; 
+        margin: 5px;
     }
     .bg__main-text h1 {
         font-size: 28px;
@@ -549,7 +525,7 @@ footer {
     .review__item {
         margin: 0 20px 40px
     }
-    
+
     .price__item {
         margin-bottom: 30px;
         margin-right: 20px;
@@ -577,7 +553,7 @@ footer {
 @media (min-width: 967px) {
     .bg__left {
         text-align: left;
-    }    
+    }
     .bg__img {
         display: block;
     }
