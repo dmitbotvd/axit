@@ -32,10 +32,6 @@ img {
     padding: 23px 0;
     background: #000;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    position: fixed;
-    z-index: 999;
 }
 .header__inner {
     display: flex;
@@ -466,6 +462,7 @@ footer {
     text-align: center;
     padding-bottom: 20px;
 }
+
 @media (min-width: 320px){
     .container {
         width: 90%;
@@ -473,11 +470,9 @@ footer {
     .logo {
         margin: 0 auto;
     }
-    .nav {
-        display: none;
-    }
     .bg__inner {
         text-align: center;
+        padding-top: 0;
     }
     .bg__left {
         margin: 0 auto;
@@ -545,6 +540,20 @@ footer {
     .description__img {
         margin: 0 auto;
     }
+    .nav__menu {
+        display: block;
+    }
+    .nav__list {
+        margin: 10px;
+        display: flex;
+        font-size: 18px;
+    }
+    .nav__list:first-child {
+        padding-top: 20px;
+    }
+    .header__inner {
+        flex-direction: column;
+    }
 @media (min-width: 768px) {
     .logo {
         margin: 0;
@@ -568,6 +577,7 @@ footer {
     }
     .bg__inner {
         text-align: left;
+        margin-top: 30px;
     }
     .section {
     padding: 100px 0;
@@ -579,6 +589,27 @@ footer {
     .bg__btn {
         margin-bottom: 30px;
     }
+    .nav__list {
+        margin-right: 42px;
+        display: inline-flex;
+        padding: 0;
+        font-size: 14px;
+    }
+    .nav__list:first-child {
+        padding-top: 0;
+    }
+    .header__inner {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        position: fixed;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        z-index: 999;
+    }
 }
 @media (min-width: 967px) {
     .bg__left {
@@ -588,8 +619,9 @@ footer {
         display: block;
     }
     .description {
-        flex-wrap: nowrap
+        flex-wrap: nowrap;
     }
+    
 }
 .scrollup{
     width: 40px;
