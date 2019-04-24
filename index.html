@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -14,7 +15,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="#logo">
                         <img src="img/Logo.png" alt="">
                     </a>
                 </div>
@@ -43,7 +44,7 @@
                     </div>
                     <a href="#" class="btn bg__btn">Download</a>
                 </div>
-                <div class="bg__right">
+                <div class="bg__right wow bounceInRight">
                     <div class="bg__right-inner">
                         <h2>Try Your <span>FREE</span> Trial Today</h2>
                     </div>
@@ -87,7 +88,7 @@
     <section class="section" id="Features">
         <div class="container">
             <div class="description">
-                <div class="description__img">
+                <div class="description__img wow bounceInLeft">
                     <img src="img/description-left.png" alt="">
                 </div>
                 <div class="description__main">
@@ -138,7 +139,7 @@
                         bibendum laoreet.</p>
                     </div>
                 </div>
-                <div class="description__img">
+                <div class="description__img wow bounceInRight">
                     <img src="img/description-right.png" alt="">
                 </div>
             </div>
@@ -156,7 +157,7 @@
             </div>
             <div class="awesome">
                 <div class="awesome__grid">
-                    <div class="awesome__item">
+                    <div class="awesome__item wow pulse">
                         <div class="awesome__img">
                             <i class="fas fa-lightbulb"></i>
                         </div>
@@ -169,7 +170,7 @@
                             dolor sit amet lacus accumsan et viverra.</p>
                         </div>
                     </div>
-                    <div class="awesome__item">
+                    <div class="awesome__item wow pulse">
                         <div class="awesome__img">
                             <i class="fas fa-keyboard"></i>
                         </div>
@@ -182,7 +183,7 @@
                             dolor sit amet lacus accumsan et viverra.</p>
                         </div>
                     </div>
-                    <div class="awesome__item">
+                    <div class="awesome__item wow pulse">
                         <div class="awesome__img">
                             <i class="fas fa-bolt"></i>
                         </div>
@@ -210,7 +211,7 @@
                     </div>
             </div>
             <div class="price">
-                <div class="price__item">
+                <div class="price__item wow flipInX center">
                    <div class="price__sup">
                         <div class="price__inner">Basic</div>
                         <div class="price__value">$0</div>
@@ -225,7 +226,7 @@
                         <li>email support</li>
                     </ul>
                 </div>
-                <div class="price__item">
+                <div class="price__item wow flipInX center">
                     <div class="price__sup">
                         <div class="price__inner">Basic</div>
                         <div class="price__value">$19</div>
@@ -240,7 +241,7 @@
                         <li>email support</li>
                     </ul>
                 </div>
-                <div class="price__item">
+                <div class="price__item wow flipInX center">
                     <div class="price__sup">
                         <div class="price__inner">Basic</div>
                         <div class="price__value">$70</div>
@@ -360,9 +361,10 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-  
-</script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 <a href="#" class="scrollup">Наверх</a>
 </body>
 </html>
