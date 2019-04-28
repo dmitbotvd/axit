@@ -517,9 +517,9 @@ footer {
     overflow: hidden;
         width: 100%;
     z-index: 1;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    opacity: 0.95
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    opacity: 0.95;
 }
 .menu-nav {
     background: #000;
@@ -529,9 +529,8 @@ footer {
     text-decoration: none;
     color: #fff;
     padding-bottom: 40px;
-    padding-left: 50px;
     justify-content: center;
-    padding-right: 90px;
+    margin: 0;
 }
     .menu-nav__link:first-child {
         margin-top: 55px;
