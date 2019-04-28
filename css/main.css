@@ -45,8 +45,8 @@ img {
 nav {
 
 }
-.nav__list {
-    margin-right: 48px;
+.menu-nav__link {
+    margin-left: 48px;
     text-decoration: none;
     opacity: 0.69;
     color: #ffffff;
@@ -462,13 +462,101 @@ footer {
     text-align: center;
     padding-bottom: 20px;
 }
-
-@media (min-width: 320px){
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    .logo {
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+    .menu-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+}
+.menu-btn span, 
+.menu-btn span:before,
+.menu-btn span:after {
+    position: absolute;
+    top: 50%; 
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+}
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    transition: 0.4s;
+}
+.menu-btn span:before {
+    transform: translateY(-5px);
+}
+.menu-btn span:after {
+    transform: translateY(5px);
+}
+.menu-btn_active span:before {
+    transform: rotate(45deg);
+}
+.menu-btn_active span:after {
+    transform: rotate(-45deg);
+}
+    .menu-btn_active span {
+        height: 0;
+    }
+.menu-block {
+    overflow: hidden;
+        width: 100%;
+    z-index: 1;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    opacity: 0.95
+}
+.menu-nav {
+    background: #000;
+}
+.menu-nav__link {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    justify-content: center;
+    padding-right: 90px;
+}
+    .menu-nav__link:first-child {
+        margin-top: 55px;
+    }
+.menu-nav {
+    transition: 0.3s;
+    transform: translateY(-100%);
+    transform-origin: bottom; 
+    opacity: 0;
+    color: #222;
+}
+.menu-nav_active {
+    transform: translateY(0%);
+    opacity: 1;
+}
+}
+@media (min-width: 320px) {
+    .header__inner {
+        position: relative;
+    }
+    .header {
+        max-height: 80px;
+    }
     .container {
         width: 90%;
-    }
-    .logo {
-        margin: 0 auto;
     }
     .bg__inner {
         text-align: center;
@@ -552,8 +640,9 @@ footer {
         padding-top: 20px;
     }
     .header__inner {
-        flex-direction: column;
+        justify-content: space-between;
     }
+}
 @media (min-width: 768px) {
     .logo {
         margin: 0;
